@@ -99,7 +99,7 @@ echo -e "\e[36m"
 done
 ]])  
 file:close()  
-file = io.open("ELM", "w")  
+file = io.open("DRG", "w")  
 file:write([[
 #!/usr/bin/env bash
 cd $HOME/ELMOSLAM
@@ -299,7 +299,7 @@ return var
 end 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(835551362) then  
-var = 'مالك السورس'
+var = 'مطــور السـورس'
 elseif tonumber(user_id) == tonumber(1236115319) then
 var = 'مبرمـج ليجاند'
 elseif tonumber(user_id) == tonumber(SUDO) then
@@ -671,7 +671,7 @@ end
 function Addmp3(msg,chat,kkl,ffrr)
 local eer = json:decode(https.request('https://api.telegram.org/bot'.. token..'/getfile?file_id='..kkl)) 
 download_to_file('https://api.telegram.org/file/bot'..token..'/'..eer.result.file_path,ffrr) 
-sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"🎼┇SOURCES ELMOSLAM.")  
+sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"🎼┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.")  
 os.execute('rm -rf ./'..ffrr) 
 end
 function Addsticker(msg,chat,Sd,rre)
@@ -2598,11 +2598,10 @@ Text = [[
 ℘ ⦑ SOURCE ELMOSLAM ⦒ 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ℘︙ [Source Channel](t.me/UU_Le1)
-℘︙ [Source Update ](t.me/FIDRG)     
-℘︙ [Source developer](t.me/s00f4)     
-℘︙ [ELMOSLAM programmer](t.me/mndzr) 
+℘︙ [Source Dev¹](t.me/UU_Le)     
+℘︙ [Source developer](t.me/ms_b_h)     
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-𓂅 . [TWS ELMOSLAM](t.me/UU_Le1bot)     
+𓂅 . [BOT ELMOSLAM](t.me/Elmoslambot)     
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -2767,10 +2766,10 @@ database:set(bot_id..'lock:Fars'..msg.chat_id_,true)
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 send(msg.chat_id_, msg.id_,' ℘︙ بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'UU_Le1')..') \n ℘︙ تـم قفـل الفارسيه ')
 end,nil)   
-elseif text == 'قفل الانكليزيه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
+elseif text == 'قفل الانجليزيه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
 database:set(bot_id..'lock:Engilsh'..msg.chat_id_,true) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' ℘︙ بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'UU_Le1')..') \n ℘︙ تـم قفـل الانكليزيه ')
+send(msg.chat_id_, msg.id_,' ℘︙ بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'UU_Le1')..') \n ℘︙ تـم قفـل الانجليزيه ')
 end,nil)
 elseif text == 'قفل الانلاين' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
 database:set(bot_id.."lock:inline"..msg.chat_id_,'del')  
@@ -2859,10 +2858,10 @@ database:del(bot_id..'lock:Fars'..msg.chat_id_)
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 send(msg.chat_id_, msg.id_,' ℘︙ بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'UU_Le1')..') \n ℘︙ تـم فـتح الفارسيه ')
 end,nil)   
-elseif text == 'فتح الانكليزيه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
+elseif text == 'فتح الانجليزيه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
 database:del(bot_id..'lock:Engilsh'..msg.chat_id_) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' ℘︙ بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'UU_Le1')..') \n ℘︙ تـم فـتح الانكليزيه ')
+send(msg.chat_id_, msg.id_,' ℘︙ بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'UU_Le1')..') \n ℘︙ تـم فـتح الانجليزيه ')
 end,nil)
 elseif text == 'فتح تعديل الميديا' and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
 database:del(bot_id..'lock_edit_med'..msg.chat_id_) 
@@ -7985,7 +7984,7 @@ local text =
 ' }\n'..' ℘︙  الايدي » { '..idgp..
 ' }\n'..' ℘︙  الايدي بالصوره » { '..idph..
 ' }\n'..' ℘︙  الرفع » { '..setadd..
-' }\n'..' ℘︙  الحظر » { '..banm..' }\n\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉  ┉ ┉ ┉ ┉≫ٴ\n ℘︙ قناة سورس المسلم ↓\n [🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1) \n'
+' }\n'..' ℘︙  الحظر » { '..banm..' }\n\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉  ┉ ┉ ┉ ┉≫ٴ\n ℘︙ قناة سورس المسلم ↓\n [🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.](t.me/UU_Le1) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -11233,7 +11232,7 @@ end
 return false
 end
 local Text =[[
-*🖥┇SOURCE ELMOSLAM COMMANDS .*
+*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴 𝙳𝚁𝙰𝙲𝙾𝙽 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
 *┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ *
 *⚙️ | اهلا انت في اوامر البوت الرئيسية 🔏*
 *⚙️ | اختر في الاسفل الرقم التابع للأمر 🔍*
@@ -11249,7 +11248,7 @@ local Text =[[
 *9️⃣◂ اوامر مطور الاساسي .*
 *🔟◂ اوامر الاعضاء .*
 *ٴ≪┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉  ┉ ┉ ┉ ┉≫ٴ*
-➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM. ](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11266,7 +11265,7 @@ keyboard.inline_keyboard = {
 {text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋', url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -11297,7 +11296,7 @@ local Text =[[
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
 *ٴ≪┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉  ┉ ┉ ┉ ┉≫ٴ*
-➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM. ](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11308,7 +11307,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -11316,25 +11315,25 @@ https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. 
 return false
 end
 ----------------------------------------------------------------- انتهئ الاوامر الجديدة
-if text == "تعطيل الزخرفه" and Manager(msg) then
-send(msg.chat_id_, msg.id_, '℘︙ تم تعطيل الزخرفه')
+if text == "تعطيل الزغرفه" and Manager(msg) then
+send(msg.chat_id_, msg.id_, '℘︙ تم تعطيل الزغرفه')
 database:set(bot_id.." sofi:zhrf_Bots"..msg.chat_id_,"close")
 end
-if text == "تفعيل الزخرفه" and Manager(msg) then
-send(msg.chat_id_, msg.id_,'℘︙ تم تفعيل الزخرفه')
+if text == "تفعيل الزغرفه" and Manager(msg) then
+send(msg.chat_id_, msg.id_,'℘︙ تم تفعيل الزغرفه')
 database:set(bot_id.." sofi:zhrf_Bots"..msg.chat_id_,"open")
 end
-if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." sofi:zhrf_Bots"..msg.chat_id_) == "open" then
-local TextZhrfa = text:match("^زخرفه (.*)$")
+if text and text:match("^زغرفه (.*)$") and database:get(bot_id.." sofi:zhrf_Bots"..msg.chat_id_) == "open" then
+local TextZhrfa = text:match("^زغرفه (.*)$")
 zh = https.request('https://rudi-dev.tk/Amir1/Boyka.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
-t = "\n℘︙ قائمه الزخرفه \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n℘︙ قائمه الزغرفه \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'ٴ≪┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉  ┉ ┉ ┉ ┉≫ٴٴ\n℘︙ ➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤ ')
+send(msg.chat_id_, msg.id_, t..'ٴ≪┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉  ┉ ┉ ┉ ┉≫ٴٴ\n℘︙ ➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM. ](t.me/UU_Le1)➤ ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '℘︙ تم تعطيل الابراج')
@@ -11423,7 +11422,7 @@ end
 end
 if text == "مصه" or text == "بوسه" or text == "بوسي" or text == "مصي" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"مووووووووواححح💋","  كفايا ياض😌","مش قدام الناس يوهه🙈😻."}send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+local texting = {"مووووووووواححح💋","مابوس ولي😌😹","خدك/ج نضيف 😂","البوسه بالف حمبي 🌝💋","خلي يزحفلي وابوسه 🙊😻","كل شويه ابوسه كافي 😏","ماابوسه والله هذا زاحف🦎","محح هاي لحاته صاكه💋"}send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
 if text == 'تفعيل الردود' and Manager(msg) then   
@@ -11545,7 +11544,7 @@ local Teext =[[
 ℘︙ الجهات
 ℘︙ الاشعارات
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴٴ
-➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11565,7 +11564,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -11614,7 +11613,7 @@ local Teext =[[
 ℘︙اوامر التحشيش
 ℘︙صورتي 
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴٴ
-➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11634,7 +11633,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -11665,7 +11664,7 @@ local Teext =[[
 ℘︙ وصف
 ℘︙ تكرار + عدد
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴٴ
-➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11685,7 +11684,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -11725,7 +11724,7 @@ local Teext =[[
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ الاوامر المضافه ( لعرض الاوامر المضافه ) 
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴٴ
-➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11745,7 +11744,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -11790,7 +11789,7 @@ local Teext =[[
 ℘︙ تغير امر الاوامر
 ℘︙ تغير امر م1 ~ الئ م10
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴٴ
-➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11810,7 +11809,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -11874,7 +11873,7 @@ local Teext =[[
 ℘︙الساعه
 ℘︙التاريخ
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴٴ
-➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11894,7 +11893,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -11948,7 +11947,7 @@ local Teext =[[
 ℘︙رفع + تنزيل ← الحاته
 ℘︙تاك للحاتات
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴٴ
-➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11968,7 +11967,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -11992,7 +11991,7 @@ local Teext =[[
 ℘︙اسم ~ ايدي + بوت غادر 
 ℘︙اذاعه 
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴٴ
-➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12012,7 +12011,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12089,7 +12088,7 @@ local Teext =[[
 ℘︙تنظيف المشتركين
 ℘︙تنظيف الجروبات
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴٴ
-➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12109,7 +12108,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12146,7 +12145,7 @@ local Teext =[[
 ℘︙شنو رئيك بهاي بالرد
 ℘︙تحب هذا
 ٴ┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉ ┉ ┉ ┉  ┉ٴٴ
-➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM. ](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12166,7 +12165,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 الاوامر الرئيسيه 🔙', callback_data="/help"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12178,7 +12177,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-*🖥┇SOURSE ELMOSLAM COMMANS .*
+*🖥┇𝚂𝙾𝚄𝚁𝙲𝙴 𝙳𝚁𝙰𝙲𝙾𝙽 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .*
 *┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ *
 *⚙️ | اهلا انت في اوامر البوت الرئيسية 🔏*
 *⚙️ | اختر في الاسفل الرقم التابع للأمر 🔍*
@@ -12194,7 +12193,7 @@ local Teext =[[
 *9️⃣◂ اوامر مطور الاساسي .*
 *🔟◂ اوامر الاعضاء .*
 *ٴ≪┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉  ┉ ┉ ┉ ┉≫ٴ*
-➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM. ](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12211,7 +12210,7 @@ keyboard.inline_keyboard = {
 {text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12245,7 +12244,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12278,7 +12277,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12308,7 +12307,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12338,7 +12337,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12368,7 +12367,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12389,7 +12388,7 @@ local Teext =[[
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
 *ٴ≪┉ ┉ ┉ ┉ ┉ 𝐌𝐒𝐋 ┉  ┉ ┉ ┉ ┉≫ٴ*
-➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤
+➫ .[🖨┇𝚂𝙾𝚄𝚁𝙲𝙴𝚂 ELMOSLAM. ](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12400,7 +12399,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐄𝐋, url="t.me/UU_Le1"},
+{text = '𝐄𝐋𝐌𝐎𝐒𝐋𝐀𝐌 𝐂𝐇𝐀𝐍𝐍𝐄𝐋', url="t.me/UU_Le1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 

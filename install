@@ -21,8 +21,8 @@ sudo apt-get install libnotify-dev -y
 sudo chmod +x tg
 lua DRAGON.lua
 sudo chmod +x DRAGON
-sudo chmod +x ./DRA
-./DRA
+sudo chmod +x ./DRG
+./DRG
 }
 if [ "$1" = "install" ]; then
 install
@@ -34,6 +34,6 @@ fi
 sudo chmod +x tg
 lua DRAGON.lua
 sudo chmod +x DRAGON
-sudo chmod +x ./DRA
-./DRA
+sudo chmod +x ./DRG
+./DRG
 fi
