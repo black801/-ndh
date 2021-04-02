@@ -21,29 +21,29 @@ file:write(serialized)
 file:close()  
 end  
 if not database:get(id_server..":token") then
-io.write('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\naٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n\27')
+io.write('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\naٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n\27')
 local token = io.read()
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
 if res ~= 200 then
-print('\27[0;31mٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n التوكن غير صحيح تاكد منه ثم ارسله')
+print('\27[0;31mٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n التوكن غير صحيح تاكد منه ثم ارسله')
 else
-io.write('\27[0;31m تم حفظ التوكن بنجاح \naٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n27[0;39;49m')
+io.write('\27[0;31m تم حفظ التوكن بنجاح \naٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n27[0;39;49m')
 database:set(id_server..":token",token)
 end 
 else
-print('\27[0;35mٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ ┉\n لم يتم حفظ التوكن ارسل لي التوكن الان')
+print('\27[0;35mٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉\n لم يتم حفظ التوكن ارسل لي التوكن الان')
 end 
 os.execute('lua DRAGON.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
-io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\naٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n\27[0;33;49m')
+io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\naٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n\27[0;33;49m')
 local SUDOID = io.read()
 if SUDOID ~= '' then
-io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \naٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n27[0;39;49m')
+io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \naٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n27[0;39;49m')
 database:set(id_server..":SUDO:ID",SUDOID)
 else
-print('\27[0;31mٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
+print('\27[0;31mٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
 end 
 os.execute('lua DRAGON.lua')
 end
@@ -80,15 +80,15 @@ token="]]..database:get(id_server..":token")..[["
 while(true) do
 rm -fr ../.telegram-cli
 if [ ! -f ./tg ]; then
-echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉ ┉ ┉ ┉ ┉┉ ┉ ┉ ┉ ┉ ┉ ┉"
+echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉ ┉ ┉ ┉ ┉┉ ┉ ┉ ┉ ┉ ┉ ┉"
 echo "TG IS NOT FIND IN FILES BOT"
-echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ ┉"
+echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉"
 exit 1
 fi
 if [ ! $token ]; then
-echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉"
+echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉"
 echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE INFO.LUA \e[0m"
-echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉ ┉ ┉┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉┉ ┉"
+echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉ ┉ ┉┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉┉ ┉"
 exit 1
 fi
 echo -e "\033[38;5;208m"
@@ -1100,7 +1100,7 @@ return false
 end
 if text == ("المطورين ℘") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
-t = "\n ℘︙ قائمة المطورين \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة المطورين \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -1116,7 +1116,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("قائمه العام ℘") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'GBan:User')
-t = "\n ℘︙ قائمه المحظورين عام \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمه المحظورين عام \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -1133,7 +1133,7 @@ return false
 end
 if text == ("قائمه الكتم العام ℘") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'Gmute:User')
-t = "\n ℘︙ قائمة المكتومين عام \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة المكتومين عام \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -2400,7 +2400,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 if text == "الاسماء المكتومه" and Constructor(msg) and database:get(bot_id.."block:name:stats"..msg.chat_id_) == "open" then
 local All_name = database:smembers(bot_id.."DRAGON:blocname"..msg.chat_id_)
-t = "\n℘︙ قائمة الاسماء المكتومه \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ \n"
+t = "\n℘︙ قائمة الاسماء المكتومه \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ \n"
 for k,v in pairs(All_name) do
 t = t..""..k.."- (["..v.."])\n"
 end
@@ -2643,7 +2643,7 @@ GetFile_Bot(msg)
 end
 if text == 'الاوامر المضافه' and Constructor(msg) then
 local list = database:smembers(bot_id..'List:Cmd:Group:New'..msg.chat_id_..'')
-t = " ℘︙ قائمه الاوامر المضافه  \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = " ℘︙ قائمه الاوامر المضافه  \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 Cmds = database:get(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..v)
 print(Cmds)
@@ -3466,7 +3466,7 @@ return false
 end
 if text == ("قائمه العام") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'GBan:User')
-t = "\n ℘︙ قائمة المحظورين عام \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة المحظورين عام \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -3761,7 +3761,7 @@ send(msg.chat_id_, msg.id_, "\n ℘︙ تم مسح قائمة المطورين  
 end
 if text == ("المطورين") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
-t = "\n ℘︙ قائمة مطورين البوت \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة مطورين البوت \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -3812,7 +3812,7 @@ end
 end
 
 if text == 'الملفات' and DevSoFi(msg) then
-t = ' ℘︙ ملفات السورس المسلم ↓\n ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ \n'
+t = ' ℘︙ ملفات السورس المسلم ↓\n ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ \n'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
 if v:match(".lua$") then
@@ -3829,8 +3829,8 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n ℘︙ اهلا بك في متجر ملفات المسلم\n ℘︙ ملفات السورس ↓\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n\n"
-local TextE = "\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n ℘︙ علامة تعني { ✔️ } ملف مفعل\n ℘︙ علامة تعني { ✖ } ملف معطل\n ℘︙ قناة سورس المسلم ↓\n".." ℘︙ [اضغط هنا لدخول](t.me/UU_Le1) \n"
+local TextS = "\n ℘︙ اهلا بك في متجر ملفات المسلم\n ℘︙ ملفات السورس ↓\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n\n"
+local TextE = "\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n ℘︙ علامة تعني { ✔️ } ملف مفعل\n ℘︙ علامة تعني { ✖ } ملف معطل\n ℘︙ قناة سورس المسلم ↓\n".." ℘︙ [اضغط هنا لدخول](t.me/UU_Le1) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -4052,7 +4052,7 @@ end
 
 if text == 'قائمه المالك' and Sudo(msg) then
 local list = database:smembers(bot_id..'CoSu'..msg.chat_id_)
-t = "\n ℘︙ قائمه المالك \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمه المالك \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4069,7 +4069,7 @@ return false
 end
 if text == ("صيح للمالك") or text == ("تاك للمالك") then
 local list = database:smembers(bot_id..'CoSu'..msg.chat_id_)
-t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4236,7 +4236,7 @@ st = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..tok
 eker = JSON.decode(st)
 if eker.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
-t = "℘︙ المنشئين الاساسين تعالو مخرب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "℘︙ المنشئين الاساسين تعالو مخرب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4258,7 +4258,7 @@ Srrt = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..t
 Sto = JSON.decode(Srrt)
 if Sto.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
-t = "℘︙ المنشئين الاساسين تعالو مخرب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "℘︙ المنشئين الاساسين تعالو مخرب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4345,7 +4345,7 @@ return false
 end
 if text == 'المنشئين الاساسين' and CoSu(msg) then
 local list = database:smembers(bot_id..'Basic:Constructor'..msg.chat_id_)
-t = "\n ℘︙ قائمة المنشئين الاساسين \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة المنشئين الاساسين \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4362,7 +4362,7 @@ return false
 end
 if text == ("تاك للمنشئين الاساسين") or text == ("صيح المنشئين الاساسين") then
 local list = database:smembers(bot_id..'Basic:Constructor'..msg.chat_id_)
-t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4530,7 +4530,7 @@ end
 
 if text == ("المنشئين") and BasicConstructor(msg) then
 local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
-t = "\n ℘︙ قائمة المنشئين \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة المنشئين \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4546,7 +4546,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمنشئين") or text == ("صيح المنشئين") then
 local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
-t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4727,7 +4727,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 if text == ("المدراء") and Constructor(msg) then
 local list = database:smembers(bot_id..'Manager'..msg.chat_id_)
-t = "\n ℘︙ قائمة المدراء \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة المدراء \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4743,7 +4743,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمدراء") or text == ("صيح المدراء") then
 local list = database:smembers(bot_id..'Manager'..msg.chat_id_)
-t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4963,7 +4963,7 @@ return false
 end
 if text == ("الثانويين") and SudoBot(msg) then
 local list = database:smembers(bot_id.."Dev:SoFi:2")
-t = "\n℘︙ قائمة مطورين الثانويين للبوت \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n℘︙ قائمة مطورين الثانويين للبوت \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5014,7 +5014,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم مسح الادمنيه')
 end
 if text == ("الادمنيه") and Manager(msg) then
 local list = database:smembers(bot_id..'Mod:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة الادمنيه \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة الادمنيه \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5030,7 +5030,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للادمنيه") or text == ("صيح الادمنيه") then
 local list = database:smembers(bot_id..'Mod:User'..msg.chat_id_)
-t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5542,7 +5542,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم مسح المميزين')
 end
 if text == ("المميزين") and Mod(msg) then
 local list = database:smembers(bot_id..'Special:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة مميزين الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة مميزين الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5558,7 +5558,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمميزين") or text == ("صيح المميزين") then
 local list = database:smembers(bot_id..'Special:User'..msg.chat_id_)
-t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ وينكم تعالو يريدوكم بالجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5737,7 +5737,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم مسح جميع المطايه')
 end
 if text == ("تاك للمطايه") and Mod(msg) then
 local list = database:smembers(bot_id..'Mote:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة مطايه الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة مطايه الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5806,7 +5806,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم مسح جميع الحاتات')
 end
 if text == ("تاك للحاتات") and Mod(msg) then
 local list = database:smembers(bot_id..'Mode:User'..msg.chat_id_)
-t = "\n ℘︙ قائمه حاتات الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمه حاتات الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5875,7 +5875,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم مسح جميع الصاكين')
 end
 if text == ("تاك للصاكين") and Mod(msg) then
 local list = database:smembers(bot_id..'Modde:User'..msg.chat_id_)
-t = "\n ℘︙ قائمه صاكين الجروب \nٴٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴٴ\n"
+t = "\n ℘︙ قائمه صاكين الجروب \nٴٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5944,7 +5944,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم تنزيل جميع صخوله من ا
 end
 if text == ("تاك للصخوله") and Mod(msg) then
 local list = database:smembers(bot_id..'Sakl:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة صخوله الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة صخوله الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6014,7 +6014,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم تنزيل جميع جلاب الجر�
 end
 if text == ("تاك للجلاب") and Mod(msg) then
 local list = database:smembers(bot_id..'Motte:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة الجلاب الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة الجلاب الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6083,7 +6083,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم تنزيل جميع القروده ب�
 end
 if text == ("تاك للقروده") and Mod(msg) then
 local list = database:smembers(bot_id..'Motee:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة القروده الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة القروده الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6152,7 +6152,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم تنزيل جميع الضلوع با�
 end
 if text == ("تاك للضلوع") and Mod(msg) then
 local list = database:smembers(bot_id..'Bro:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة الضلوع الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة الضلوع الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6221,7 +6221,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم تنزيل جميع الضلعات ب�
 end
 if text == ("تاك للضلعات") and Mod(msg) then
 local list = database:smembers(bot_id..'Girl:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة الضلعات الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة الضلعات الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6290,7 +6290,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم تنزيل جميع البقرات ب�
 end
 if text == ("تاك للبقرات") and Mod(msg) then
 local list = database:smembers(bot_id..'Bakra:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة البقرات الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة البقرات الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6359,7 +6359,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم تنزيل جميع طليان بال�
 end
 if text == ("تاك للطليان") and Mod(msg) then
 local list = database:smembers(bot_id..'Tele:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة الطليان الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة الطليان الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6428,7 +6428,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم تنزيل جميع زواحف')
 end
 if text == ("تاك للزواحف") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة الزواحف الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة الزواحف الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6497,7 +6497,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم تنزيل جميع جريزي')
 end
 if text == ("تاك للجريذيه") and Mod(msg) then
 local list = database:smembers(bot_id..'Jred:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة الجريذيه الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة الجريذيه الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6566,7 +6566,7 @@ send(msg.chat_id_, msg.id_, '\n ℘︙ تم مسح المحظورين')
 end
 if text == ("المحظورين") then
 local list = database:smembers(bot_id..'Ban:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة محظورين الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة محظورين الجروب \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6806,7 +6806,7 @@ send(msg.chat_id_, msg.id_, ' ℘︙ تم مسح المكتومين')
 end
 if text == ("المكتومين") and Mod(msg) then
 local list = database:smembers(bot_id..'Muted:User'..msg.chat_id_)
-t = "\n ℘︙ قائمة المكتومين \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة المكتومين \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7938,10 +7938,10 @@ local text =
 '\n⚙️┇𝙶𝚁𝙾𝚄𝙿 𝚂𝙴𝚃𝚃𝙸𝙽𝙶𝚂'..
 '\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ '..
 '\n ℘︙ اعدادات الجروب كتالي √↓'..
-'\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ'..
+'\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ'..
 '\n ℘︙  علامة ال {🔓} تعني مفعل'..
 '\n ℘︙  علامة ال {🔐} تعني معطل'..
-'\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ'..
+'\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ'..
 '\n ℘︙  الروابط » { '..lock_links..
 ' }\n'..' ℘︙  المعرفات » { '..lock_user..
 ' }\n'..' ℘︙  التاك » { '..lock_hash..
@@ -7952,7 +7952,7 @@ local text =
 ' }\n'..' ℘︙  الماركدون » { '..lock_mark..
 ' }\n'..' ℘︙  التعديل » { '..lock_edit..
 ' }\n'..' ℘︙  تعديل الميديا » { '..lock_edit_med..
-' }\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ'..
+' }\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ'..
 '\n'..' ℘︙  الكلايش » { '..lock_spam..
 ' }\n'..' ℘︙  الكيبورد » { '..lock_inlin..
 ' }\n'..' ℘︙  الاغاني » { '..lock_vico..
@@ -7961,7 +7961,7 @@ local text =
 ' }\n'..' ℘︙  الدردشه » { '..lock_text..
 ' }\n'..' ℘︙   الفيديو » { '..lock_ved..
 ' }\n'..' ℘︙   الصور » { '..lock_photo..
-' }\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ'..
+' }\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ'..
 '\n'..' ℘︙   الصوت » { '..lock_muse..
 ' }\n'..' ℘︙  الملصقات » { '..lock_ste..
 ' }\n'..' ℘︙  الجهات » { '..lock_phon..
@@ -7972,10 +7972,10 @@ local text =
 ' }\n'..' ℘︙  التكرار » { '..flood..
 ' }\n'..' ℘︙  الترحيب » { '..welcome..
 ' }\n'..' ℘︙  عدد التكرار » { '..NUM_MSG_MAX..
-' }\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ'..
+' }\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ'..
 '\n ℘︙  علامة ال {🔓} تعني مفعل'..
 '\n ℘︙  علامة ال {🔐} تعني معطل'..
-'\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ'..
+'\nءٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ'..
 '\n'..' ℘︙  امر صيح » { '..kickme..
 ' }\n'..' ℘︙  امر اطردني » { '..sehuser..
 ' }\n'..' ℘︙  امر مين ضافني » { '..addme..
@@ -7984,7 +7984,7 @@ local text =
 ' }\n'..' ℘︙  الايدي » { '..idgp..
 ' }\n'..' ℘︙  الايدي بالصوره » { '..idph..
 ' }\n'..' ℘︙  الرفع » { '..setadd..
-' }\n'..' ℘︙  الحظر » { '..banm..' }\n\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n ℘︙ قناة سورس المسلم ↓\n [🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1) \n'
+' }\n'..' ℘︙  الحظر » { '..banm..' }\n\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n ℘︙ قناة سورس المسلم ↓\n [🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -8362,7 +8362,7 @@ end
 
 if text == "قائمه المنع" and Manager(msg) then   
 local list = database:smembers(bot_id.."DRAGON1:List:Filter"..msg.chat_id_)  
-t = "\n ℘︙ قائمة المنع \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة المنع \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do  
 local DRAGON_Msg = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..v..msg.chat_id_)   
 t = t..""..k.."- "..v.." » {"..DRAGON_Msg.."}\n"    
@@ -8508,7 +8508,7 @@ return false
 end
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID,filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = "\n ℘︙ قائمة البوتات الموجوده \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+text = "\n ℘︙ قائمة البوتات الموجوده \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -8527,7 +8527,7 @@ send(msg.chat_id_, msg.id_, " ℘︙ لا توجد بوتات في الجروب"
 return false 
 end
 if #admins == i then 
-local a = '\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n ℘︙ عدد البوتات التي هنا >> {'..n..'} بوت\n'
+local a = '\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n ℘︙ عدد البوتات التي هنا >> {'..n..'} بوت\n'
 local f = ' ℘︙ عدد البوتات التي هي ادمن >> {'..t..'}\n ℘︙ ملاحضه علامة ال (✯) تعني ان البوت ادمن \n'
 send(msg.chat_id_, msg.id_, text..a..f)
 end
@@ -8616,7 +8616,7 @@ if #list == 0 then
 send(msg.chat_id_, msg.id_,' ℘︙ لا توجد صلاحيات مضافه')
 return false
 end
-t = "\n ℘︙ قائمة الصلاحيات المضافه \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n ℘︙ قائمة الصلاحيات المضافه \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 var = database:get(bot_id.."Comd:New:rt:bot:"..v..msg.chat_id_)
 if var then
@@ -9155,7 +9155,7 @@ return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
 },function(ta,DRAGON)
-local t = "\nツ قائمة الاعضاء \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+local t = "\nツ قائمة الاعضاء \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 x = 0
 local list = DRAGON.members_
 for k, v in pairs(list) do
@@ -9359,7 +9359,7 @@ end
 
 if text == ("ردود المطور") and DevSoFi(msg) then 
 local list = database:smembers(bot_id..'List:Rd:Sudo')
-text = "\n ℘︙ قائمة ردود المطور \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+text = "\n ℘︙ قائمة ردود المطور \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."Add:Rd:Sudo:Gif"..v) then
 db = 'متحركه'
@@ -9583,7 +9583,7 @@ end
 
 if text == ("ردود المدير") and Manager(msg) then
 local list = database:smembers(bot_id..'List:Manager'..msg.chat_id_..'')
-text = " ℘︙ قائمه ردود المدير \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+text = " ℘︙ قائمه ردود المدير \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."Add:Rd:Manager:Gif"..v..msg.chat_id_) then
 db = 'متحركه'
@@ -9854,7 +9854,7 @@ PRo = '❴ ✔️ ❵'
 else
 PRo = '❴ ✖ ❵'
 end 
-send(msg.chat_id_, msg.id_,'\n ℘︙صلاحيات البوت هي\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n℘︙  علامة ال {✔️} تعني مفعل\n℘︙  علامة ال {✖} تعني غير مفعل\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n℘︙تغير معلومات المجموعة ↞ '..INf..'\n℘︙حذف الرسائل ↞ '..DEL..'\n℘︙حظر المستخدمين ↞ '..REs..'\n℘︙دعوة المستخدمين ↞ '..INv..'\n℘︙ثتبيت الرسالة ↞ '..Pin..'\n℘︙اضافة مشرفين ↞ '..PRo)   
+send(msg.chat_id_, msg.id_,'\n ℘︙صلاحيات البوت هي\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n℘︙  علامة ال {✔️} تعني مفعل\n℘︙  علامة ال {✖} تعني غير مفعل\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n℘︙تغير معلومات المجموعة ↞ '..INf..'\n℘︙حذف الرسائل ↞ '..DEL..'\n℘︙حظر المستخدمين ↞ '..REs..'\n℘︙دعوة المستخدمين ↞ '..INv..'\n℘︙ثتبيت الرسالة ↞ '..Pin..'\n℘︙اضافة مشرفين ↞ '..PRo)   
 end
 end
 if text == "تعطيل الانستا" and Manager(msg) then
@@ -9895,7 +9895,7 @@ User_id = "@"..b.username_
 else
 User_id = msg.sender_user_id_
 end --الكود حصري سورس المسلم يعني لو بكتهن راح اعرفك انت الاخذتهن
-local t = "\n℘︙المستخدم ~ ["..User_id .."] يصيح المشرفين \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+local t = "\n℘︙المستخدم ~ ["..User_id .."] يصيح المشرفين \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 k = 0
 for i,v in pairs(data.members_) do
 if bot_id ~= v.user_id_ then 
@@ -9937,7 +9937,7 @@ end
 return false
 end
 local list = database:smembers(bot_id.."botss:DRAGON:List:Rd:Sudo")
-text = "\nقائمة ردود المتعدده \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+text = "\nقائمة ردود المتعدده \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 for k,v in pairs(list) do
 db = "رساله "
 text = text..""..k.." => {"..v.."} => {"..db.."}\n"
@@ -11236,7 +11236,7 @@ local Text =[[
 *┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ *
 *⚙️ | اهلا انت في اوامر البوت الرئيسية 🔏*
 *⚙️ | اختر في الاسفل الرقم التابع للأمر 🔍*
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 *1️⃣◂ اوامر الحمايه .*
 *2️⃣◂ اوامر تعطيل ~ تفعيل .*
 *3️⃣◂ اوامر ضع ~ اضف  .*
@@ -11247,7 +11247,7 @@ local Text =[[
 *8️⃣◂ اوامر مطور البوت .*
 *9️⃣◂ اوامر مطور الاساسي .*
 *🔟◂ اوامر الاعضاء .*
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 ➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -11289,13 +11289,13 @@ return false
 end
 local Text =[[
 *اهلا انتツفي اضافات البوت*
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴٴ*
 * يمكنك معرفة حاله تفعيل الاضافات *
 * من خلال ارسال حاله الاضافات *
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 ➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -11327,13 +11327,13 @@ if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." sofi:zhrf
 local TextZhrfa = text:match("^زخرفه (.*)$")
 zh = https.request('https://rudi-dev.tk/Amir1/Boyka.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
-t = "\n℘︙ قائمه الزخرفه \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
+t = "\n℘︙ قائمه الزخرفه \nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n"
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴٴ\n℘︙ ➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤ ')
+send(msg.chat_id_, msg.id_, t..'ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴٴ\n℘︙ ➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤ ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '℘︙ تم تعطيل الابراج')
@@ -11512,10 +11512,10 @@ local Teext =[[
 🛡┇𝙿𝚁𝙾𝚃𝙴𝙲𝚃𝙸𝙾𝙽 𝙾𝚁𝙳𝙴𝚁𝚂.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ℘︙ اوامر الحمايه اتبع مايلي 🔐 .
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ قفل + فتح ← الامر… 
 ℘︙ ← { بالتقيد ، بالطرد ، بالكتم }
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ الروابط
 ℘︙ المعرف
 ℘︙ التاك
@@ -11526,7 +11526,7 @@ local Teext =[[
 ℘︙ الملفات
 ℘︙ الصور
 ℘︙ التفليش
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ الماركداون
 ℘︙ البوتات
 ℘︙ الاباحي
@@ -11537,13 +11537,13 @@ local Teext =[[
 ℘︙ الفيديو
 ℘︙ الانلاين
 ℘︙ الدردشه
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ التوجيه
 ℘︙ الاغاني
 ℘︙ الصوت
 ℘︙ الجهات
 ℘︙ الاشعارات
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴٴ
 ➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -11580,9 +11580,9 @@ local Teext =[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ℘︙ اهلا بك عزيزي 🔊 .
 ℘︙اوامر تفعيل وتعطيل ( 🔐 - 🔓) .
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ تفعيل ~ تعطيل + امر 🔚 .
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙اطردني
 ℘︙صيح
 ℘︙ضافني
@@ -11612,7 +11612,7 @@ local Teext =[[
 ℘︙ردود البوت
 ℘︙اوامر التحشيش
 ℘︙صورتي 
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴٴ
 ➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -11649,12 +11649,12 @@ local Teext =[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ℘︙اهلا بك عزيزي 🔊 .
 ℘︙اوامر الوضع - اضف ( 📌 - 📍) .
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ اضف / حذف ← رد
 ℘︙ اضف / حذف ← صلاحيه
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ ضع + امر …
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ اسم
 ℘︙ رابط
 ℘︙ ترحيب
@@ -11663,7 +11663,7 @@ local Teext =[[
 ℘︙ صوره
 ℘︙ وصف
 ℘︙ تكرار + عدد
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴٴ
 ➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -11700,9 +11700,9 @@ local Teext =[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ℘︙ اهلا بك عزيزي 🔊 .
 ℘︙اوامر مسح / الحذف ← امر ( ✂️ - 📝 ).
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙مسح + امر ↓
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙الايدي 
 ℘︙المميزين
 ℘︙الادمنيه
@@ -11719,11 +11719,11 @@ local Teext =[[
 ℘︙قائمه منع الملصقات
 ℘︙مسح قائمه المنع
 ℘︙المحذوفين
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ حذف  امر + الامر القديم  
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ الاوامر المضافه ( لعرض الاوامر المضافه ) 
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴٴ
 ➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -11760,9 +11760,9 @@ local Teext =[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ℘︙ اهلا بك عزيزي 🔊 .
 ℘︙ اوامر تنزيل ورفع ( ⚖️ ) .
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ تنزيل 🔛 رفع + امر ↓
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ مميز
 ℘︙ ادمن
 ℘︙ مدير
@@ -11775,9 +11775,9 @@ local Teext =[[
 ℘︙ القيود 
 ℘︙ تنزيل جميع الرتب
 ℘︙ تنزيل الكل 
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ اوامر التغير …
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ تغير رد المطور + اسم
 ℘︙ تغير رد المالك + اسم
 ℘︙ تغير رد منشئ الاساسي + اسم
@@ -11788,7 +11788,7 @@ local Teext =[[
 ℘︙ تغير رد العضو + اسم
 ℘︙ تغير امر الاوامر
 ℘︙ تغير امر م1 ~ الئ م10
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴٴ
 ➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -11825,9 +11825,9 @@ local Teext =[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ℘︙اهلا بك عزيزي 🔊 .
 ℘︙اوامر المجموعه 📢 .
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ الاوامر كالتالي ♻️ ↓
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙استعاده الاوامر 
 ℘︙تحويل كالاتي~⪼ بالرد على صوره او ملصق او صوت او بصمه بالامر ← تحويل 
 ℘︙صيح ~ تاك ~ المميزين : الادمنيه : المدراء : المنشئين : المنشئين الاساسين
@@ -11872,7 +11872,7 @@ local Teext =[[
 ℘︙نسبه الانوثه
 ℘︙الساعه
 ℘︙التاريخ
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴٴ
 ➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -11908,45 +11908,45 @@ local Teext =[[
 🤹🏻┇𝙵𝚄𝙽𝙽𝚈 𝙾𝚁𝙳𝙴𝚁𝚂 .
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ℘︙ الاوامر التحشيش 🃏
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ رفع + تنزيل ← الامࢪ ↓
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← مطي 
 ℘︙تاك للمطايه
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← صخل
 ℘︙تاك لصخوله
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← جلب
 ℘︙تاك لجلاب
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← قرد 
 ℘︙تاك لقروده
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← بقره
 ℘︙تاك لبقرات
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← ضلع
 ℘︙تاك لضلوع
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← ضلعه
 ℘︙تاك للضلعات
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← طلي
 ℘︙تاك لطليان
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← زاحف 
 ℘︙تاك لزواحف
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← جريذي
 ℘︙تاك لجريذيه
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← الصاك
 ℘︙تاك للصاكين
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙رفع + تنزيل ← الحاته
 ℘︙تاك للحاتات
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴٴ
 ➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -11982,7 +11982,7 @@ local Teext =[[
 🏅┇𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁𝚂' 𝙾𝚁𝙳𝙴𝚁𝚂 .
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ℘︙اوامر المطورين ( 👥).
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙تفعيل ← تعطيل 
 ℘︙المجموعات ← المشتركين ← الاحصائيات
 ℘︙رفع ← تنزيل منشئ اساسي
@@ -11990,7 +11990,7 @@ local Teext =[[
 ℘︙مسح المنشئين ← المنشئين
 ℘︙اسم ~ ايدي + بوت غادر 
 ℘︙اذاعه 
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴٴ
 ➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -12027,7 +12027,7 @@ local Teext =[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ℘︙اهلا بك عزيزي 🔊
 ℘︙اوامر مطور الاساسي 👨🏼‍✈️
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙تفعيل
 ℘︙تعطيل
 ℘︙مسح الاساسين
@@ -12037,7 +12037,7 @@ local Teext =[[
 ℘︙مسح المطورين
 ℘︙المطورين
 ℘︙رفع | تنزيل مطور
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙اسم البوت + غادر
 ℘︙غادر
 ℘︙اسم بوت + الرتبه
@@ -12049,19 +12049,19 @@ local Teext =[[
 ℘︙مسح قائمه العام
 ℘︙جلب نسخه الاحتياطيه
 ℘︙رفع نسخه الاحتياطيه
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙المتجر 
 ℘︙متجر الملفات
 ℘︙الملفات
 ℘︙مسح الملفات
 ℘︙تعطيل + تفعيل + اسم ملف
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙اذاعه خاص
 ℘︙اذاعه
 ℘︙اذاعه بالتوجيه
 ℘︙اذاعه بالتوجيه خاص
 ℘︙اذاعه بالتثبيت
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ جلب نسخه البوت
 ℘︙رفع نسخه البوت
 ℘︙ضع عدد الاعضاء + العدد
@@ -12073,21 +12073,21 @@ local Teext =[[
 ℘︙اضف/حذف رد للكل
 ℘︙ردود المطور
 ℘︙مسح ردود المطور
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙الاشتراك الاجباري
 ℘︙تعطيل الاشتراك الاجباري
 ℘︙تفعيل الاشتراك الاجباري
 ℘︙حذف رساله الاشتراك
 ℘︙تغير رساله الاشتراك
 ℘︙تغير الاشتراك
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙الاحصائيات
 ℘︙المشتركين
 ℘︙المجموعات 
 ℘︙تفعيل/تعطيل المغادره
 ℘︙تنظيف المشتركين
 ℘︙تنظيف الجروبات
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴٴ
 ➫ .[🖨┇SOURCES ELMOSLAM.](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -12120,31 +12120,31 @@ local Teext =[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ℘︙اهلا بك عزيزي 🔊 .
 ℘︙اوامر الاعضاء كالتالي ↓
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙عرض معلوماتك ↑↓
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙ايديي ← اسمي 
 ℘︙رسايلي ← مسح رسايلي 
 ℘︙رتبتي ← سحكاتي 
 ℘︙مسح سحكاتي ← المنشئ 
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙اوآمر المجموعه ↑↓
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙الرابط ← القوانين – الترحيب
 ℘︙ ايدي ← اطردني 
 ℘︙اسمي ← المطور  
 ℘︙كشف ~ بالرد بالمعرف
 ℘︙كول + كلمه
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙اسم البوت + الامر ↑↓
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴ
 ℘︙بوسه بالرد 
 ℘︙مصه بالرد
 ℘︙رزله بالرد 
 ℘︙شنو رئيك بهذا بالرد
 ℘︙شنو رئيك بهاي بالرد
 ℘︙تحب هذا
-ٴ┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉ ┉ ┉ ┉  ┉ٴٴ
+ٴ┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉ ┉ ┉ ┉  ┉ٴٴ
 ➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -12181,7 +12181,7 @@ local Teext =[[
 *┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ *
 *⚙️ | اهلا انت في اوامر البوت الرئيسية 🔏*
 *⚙️ | اختر في الاسفل الرقم التابع للأمر 🔍*
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 *1️⃣◂ اوامر الحمايه .*
 *2️⃣◂ اوامر تعطيل ~ تفعيل .*
 *3️⃣◂ اوامر ضع ~ اضف  .*
@@ -12192,7 +12192,7 @@ local Teext =[[
 *8️⃣◂ اوامر مطور البوت .*
 *9️⃣◂ اوامر مطور الاساسي .*
 *🔟◂ اوامر الاعضاء .*
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 ➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -12224,7 +12224,7 @@ return false
 end
 local Teext =[[
 انت الان في قائمة كتم الأسماء
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 الاوامر الخاصة فـي كتم الاسماء 
 تفعيل كتم الاسم
 تعطيل كتم الاسم
@@ -12257,7 +12257,7 @@ return false
 end
 local Teext =[[
 انت الان في قائمة التوحيد
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 الاوامر الخاصة فـي التوحيد 
 تفعيل التوحيد
 تعطيل التوحيد
@@ -12290,7 +12290,7 @@ return false
 end
 local Teext =[[
 انت الان في قائمة تنبيه الاسماء
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 الاوامر الخاصة فـي تنبيه الاسماء 
 تفعيل تنبيه الاسماء
 تعطيل تنبيه الاسماء
@@ -12320,7 +12320,7 @@ return false
 end
 local Teext =[[
 انت الان في قائمة تنبيه المعرف
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 الاوامر الخاصة فـي تنبيه المعرف
 تفعيل تنبيه المعرف
 تعطيل تنبيه المعرف
@@ -12350,7 +12350,7 @@ return false
 end
 local Teext =[[
 انت الان في قائمة تنبيه الصور
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 الاوامر الخاصة فـي تنبيه الصور
 تفعيل تنبيه الصور
 تعطيل تنبيه الصور
@@ -12381,13 +12381,13 @@ return false
 end
 local Teext =[[
 *اهلا انتツفي اضافات البوت*
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴٴ*
 * يمكنك معرفة حاله تفعيل الاضافات *
 * من خلال ارسال حاله الاضافات *
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
-*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ*
+*ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ*
 ➫ .[🖨┇SOURCES ELMOSLAM. ](t.me/UU_Le1)➤
 ]]
 keyboard = {} 
@@ -12657,7 +12657,7 @@ end
 if #list == 0 then
 t = " ℘︙ لا يوجد ادمن"
 end
-send(msg.chat_id_,0,''..t..'\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐋𝐄𝐆 ┉  ┉ ┉ ┉ ┉≫ٴ\n ℘︙ تم التعديل على الميديا\n ℘︙ الشخص الي قام بالتعديل\n ℘︙ ايدي الشخص ◂ '..result.sender_user_id_..'\n ℘︙ معرف الشخص»{ '..users..' }') 
+send(msg.chat_id_,0,''..t..'\nٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n ℘︙ تم التعديل على الميديا\n ℘︙ الشخص الي قام بالتعديل\n ℘︙ ايدي الشخص ◂ '..result.sender_user_id_..'\n ℘︙ معرف الشخص»{ '..users..' }') 
 end,nil)
 DeleteMessage(msg.chat_id_,{[0] = msg.message_id_}) 
 end
